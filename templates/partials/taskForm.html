@@ -1,0 +1,41 @@
+<form action ="/new" method="post" class="card bg-dark text-light">
+   
+    <div class="card-body fluid p-3">
+        <div class="row">
+            <div class="mb-2">
+                <head>
+                    <style>
+                        label {
+                            color: white;
+                            font-size: large;
+                        }
+                    </style>
+                </head>
+                <label for="TaskName"> Nueva tarea: </label>
+            </div>
+
+            <div>
+                <input type="text"
+                name="TaskName"
+                placeholder="Agregar una tarea"
+                class=" form-control rounded-0 bg-light border-0 text-dark"/>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="TaskDescription"> </label>
+            <input type="text"
+            name="TaskDescription"
+            placeholder="Agregar una descripcion"
+            class=" form-control rounded-0 bg-light border-0 text-dark"/>
+        </div>
+
+        <div class="mb-1">
+            <button class="btn btn-primary"> Guardar </button>
+        </div>
+    </div>
+    
+
+   
+
+</form>

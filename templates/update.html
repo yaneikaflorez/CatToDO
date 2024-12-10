@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div class="row"> 
+        <div class="col-md-4 offset-md-4">
+            <form action ="/update/{{tareaUP.id}}" method="POST" class="card bg-dark text-light">
+                <div class="card-body p-4">
+        
+                    <div class="mb-2">
+                        <head>
+                            <style>
+                                label {
+                                    color: white;
+                                    font-size: large;
+                                }
+                            </style>
+                        </head>
+                        <label for="TaskName"> Actualizar tarea: </label>
+                    </div>
+                    <div class="mb-3">
+                        
+                        <input type="text"
+                        name="TaskName"
+                        placeholder="Agregar una tarea"
+                        value="{{tareaUP.TaskName}}"
+                        class=" form-control rounded-0 bg-light border-0 text-dark"/>
+            
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input type="text" 
+                        name="TaskDescription" 
+                        placeholder="Agregar una descripcion" 
+                        value="{{tareaUP.TaskDescription}}"
+                        class=" form-control rounded-0 bg-light border-0 text-dark"/>
+                    </div>
+                    
+            
+                    <div class="mb-1">
+                        <button class="btn btn-success"> Actualizar </button>
+                    </div>
+                </div>
+        
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+{% endblock %}
